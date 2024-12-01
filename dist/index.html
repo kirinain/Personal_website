@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Kiriti Nain – Personal Website</title>
+
+    <link rel="icon" type="image/png" href="/icon/32x32.png" />
+
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,viewport-fit=cover"
+    />
+    <link rel="apple-touch-icon" sizes="180x180" href="/icon/180x180.png" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <meta name="theme-color" content="#f6d4b1" />
+
+    <meta property="og:title" content="Kiriti Nain – Personal Website" />
+    <meta property="og:type" content="website" />
+
+    <meta property="og:image" content="https://edh.dev/icon/og-img1.png" />
+
+    <link rel="manifest" href="/manifest.json" />
+    <script type="module" crossorigin src="/assets/index-BinwUvq7.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-DyysJUmZ.css">
+  </head>
+
+  <body>
+    <div id="home"></div>
+
+    <canvas class="webgl"></canvas>
+
+    <div id="hero-backup">
+      <h3>Hi there, I’m</h3>
+      <h1>Ed</h1>
+      <ul>
+        <li>Software Engineer</li>
+        <li>Digital Designer</li>
+      </ul>
+    </div>
+
+    <nav>
+      <div class="menu-btn">
+        <button class="btn" onclick="toggleMenu()">
+          <svg width="16" height="16">
+            <rect class="st0" width="16" height="3.2" />
+            <rect y="6.4" class="st0" width="16" height="3.2" />
+            <rect y="12.8" class="st0" width="16" height="3.2" />
+          </svg>
+        </button>
+  
+      </div>
+
+      <div class="menu-body" onclick="closeMenu()">
+        <a href="#home" onclick="closeMenu()">Home</a>
+        <a href="#aboutMe" onclick="closeMenu()">About</a>
+        <a href="#projects" onclick="closeMenu()">Projects</a>
+        <a href="#contact" onclick="closeMenu()">Contact</a>
+      </div>
+
+      <div id="tip-scroll">Scroll &#8595;</div>
+    </nav>
+
+    <main>
+      <section>
+        <h1 id="aboutMe">Hi there</h1>
+        <p>
+          My name is Kiriti Nain, I'm a tech innovator specializing in robotics, 
+          and AI, with expertise in machine learning platforms and ROS technologies.
+           As a robotics enthusiast and A.T.O.M Robotics Lab member, I create innovative
+            solutions bridging software, hardware, and educational technologies.
+             My passion lies in sustainable development.
+
+        </p>
+        <p>
+          In addition to my love of technology and design, 
+          I am also a keen reader and my favourite author is John Green.
+
+        </p>
+
+        <p>
+          Below are details of some of the projects.
+        </p>
+      </section>
+
+      <section>
+        <h1 id="projects">Projects</h1>
+        <hr />
+        <h2>MR Robot 2.0</h2>
+        <h3>2024-Present</h3>
+        <ul class="skills">
+          <li>Ros 2</li>
+          <li>SLAM</li>
+          <li>Navigation Stack</li>
+          <li>RViz</li>
+          <li>Pyhton</li>
+          <li>Raspberry Pi</li>
+          <li>IMU</li>
+          <li>Ydlidar</li>
+        </ul>
+        <p>
+          MR ROBOT 2.0 is an autonomous navigation robot capable of performing various day-to-day operations, with a 
+  modular design that allows for customization to perform other tasks as well.
+- Integrating Raspberry Pi and LiDAR components to facilitate autonomous mobile robot (AMR) functionality, performed 
+  mapping and autonomous navigation, as well as developed code for different drive modes to enable teleoperation.
+        </p>
+        <p>
+          
+        </p>
+        <p><a href="https://github.com/atom-robotics-lab">Github</a></p>
+        <br />
+        <div class="image">
+          <img
+            src="/assets/project_1-CF4iuNLH.jpeg"
+            width="100%"
+            alt="Page Buddy screenshot"
+            loading="lazy"
+            style="aspect-ratio: 2100 / 1500"
+          />
+        </div>
+      
+        <hr />
+        <h2>Aruco Navigation Project</h2>
+        <h3>March-September 2024</h3>
+        <ul class="skills">
+          <li>ROS 2</li>
+          <li>Python</li>
+          <li>OpenCV</li>
+          <li>Gazebo</li>
+          <li>Blender</li>
+          <li>Docker</li>
+        </ul>
+        <p>An early version of Page Buddy.</p>
+        <p>
+          Aruco Marker Development: Created 3D Aruco markers using Blender, designed to enhance robotic navigation and 
+ environment interaction within a simulated world.  
+- Simulation Environment: Developed a dynamic environment in Gazebo, spawning Aruco markers and a mobile robot 
+  to facilitate testing and visualization of robotic behaviors.
+- Custom Scripting and Interfaces: Wrote scripts for Aruco detection and bot control, and implemented custom 
+  interfaces to streamline interaction between the robot and the simulation environment and deployed it on Docker.         
+
+        </p>
+        <button
+          class="collapse-btn btn"
+          collapsed="true"
+          onclick="this.setAttribute('collapsed', this.getAttribute('collapsed') === 'true'? 'false' : 'true')"
+        >
+          more...
+        </button>
+
+        <div class="collapse-body">
+          <p>
+          </p>
+          <p>
+          </p>
+          <p><a href="https://github.com/kirinain/aruco_navigation_ros2">Github</a></p>
+        </div>
+        
+        <br />
+
+        <div class="image">
+          <img
+            src="/assets/project_2-C3wd2-wy.jpeg"
+            width="100%"
+            alt="Writing Buddy screenshot"
+            style="aspect-ratio: 1330 / 924"
+          />
+        </div>
+        <hr />
+
+        <h2>Fintoolekt</h2>
+        <h3>June 2024</h3>
+        <ul class="skills">
+          <li>ML</li>
+          <li>Tensorflow</li>
+          <li>Decison Tree</li>
+          <li>Random Forest</li>
+        </ul>
+        <p>
+          Web Application Development: Collaborated on building a robust web platform designed for fraud detection
+  and auditing of large datasets, enhancing data integrity and security.
+- Machine Learning Implementation: Developed and implemented machine learning models, utilizing algorithms such
+  as Decision Trees and Random Forests to effectively identify fraudulent activities and patterns within the data.
+
+        </p>
+        <p><a href="https://github.com/kirinain/FinToolekt">Github</a></p>
+        <p>
+          <br />
+        <div class="image">
+          <img
+            src="/assets/project_3-DI8zfC2c.jpeg"
+            width="100%"
+            alt="Page Buddy screenshot"
+            loading="lazy"
+            style="aspect-ratio: 2443 / 1576"
+          />
+        </div>
+        <hr />
+
+        <h2>CropDoc</h2>
+        <h3>April 2024</h3>
+        <ul class="skills">
+          <li>CNN</li>
+          <li>PyTorch</li>
+          <li>Tensorflow</li>
+          <li>Pyhton</li>
+          <li>OpenCV</li>
+          <li>ESP-32</li>
+        </ul>
+        <p>
+          Build a diseases detection model for crop leaves that can be used by farmers in agriculture fields to prevent crop 
+  damage.
+- I worked on training ML model through transfer learning on our own dataset, so the model can take up real time
+  dataset through computer vision.
+- Also worked on ESP-32 for making a moisture-detection sensor for better irrigation conditions in fields.
+
+</p>
+<p><a href="https://github.com/kirinain/CropDoc">Github</a></p>
+<p>
+
+<br />
+        <div class="image">
+          <img
+            src="/assets/project_4-De19R392.jpeg"
+            width="100%"
+            alt="Page Buddy screenshot"
+            loading="lazy"
+            style="aspect-ratio: 2200/ 1700"
+          />
+        </div>
+        <hr />
+
+        <h2>ZenZone</h2>
+        <h3>May 20024</h3>
+        <ul class="skills">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>Unity</li>
+          <li>Python</li>
+          <li>Tensorflow</li>
+        </ul>
+        <p>
+          Website Development: Developed an interactive website, ZenZone, aimed at addressing mental health issues 
+   through innovative virtual solutions and resources.
+- VR Psychiatrist Room Creation: Designed a virtual reality psychiatrist room in Blender, providing an immersive
+   environment for users to engage in virtual therapy sessions and enhance their mental wellness.
+- Integrated Chatbot and VR Experiences: Implemented a voice-to-text chatbot for seamless virtual therapy interactions, 
+  alongside creating a rage room for stress relief and a calming VR environment for meditation, promoting holistic 
+  mental health support.
+
+        </p>
+        <p><a href="https://github.com/kirinain/zen-zone">Github</a></p> 
+        <br />
+        <div class="image">
+          <img
+            src="/assets/project_5-DWsO6Law.jpeg"
+            width="100%"
+            alt="Page Buddy screenshot"
+            loading="lazy"
+            style="aspect-ratio: 2000/ 1900"
+          />
+        </div>
+
+      </section>
+      <section>
+        <h1 id="projects">Achievements</h1>
+        <hr>
+      </hr>
+      <h2>Empowher Hackathon at IIIT Delhi - 1st Position</h2>
+        <h3>she-ksha</h3>
+        <h3> October 2023</h3>
+        <ul class="skills">
+          <li>Blender</li>
+          <li>Unity</li>
+          <li>LLM</li>
+        </ul>
+        <p>
+          Won this Hackathon with the project "She-ksha".
+- Build a website that consisted of AR-VR classroom, Multilingual Chatbot and community support to improve better
+ learning experience for rural women due to absence of good infrastructure.
+- I worked on creating models through blender for virtual classrooms, and making models of human characters.
+- Created a multilingual chatbot for community support.
+
+        </p>
+        <p>
+          
+        </p>
+        <p><a href="https://github.com/kirinain/VR_CLassroom">Github</a></p>
+        <br />
+        <div class="image">
+          <img
+            src="/assets/project_6-B-Tu55lP.jpeg"
+            width="100%"
+            alt="Page Buddy screenshot"
+            loading="lazy"
+            style="aspect-ratio: 1800 / 1576"
+          />
+        </div>
+        <hr />
+        <h2>ML Code Crunch Hackathon at DTU - 3rd Position </h2>
+        <h3>SereneHub</h3>
+        <h3>February 2024</h3>
+        <ul class="skills">
+          <li>LLM Model</li>
+          <li>ML</li>
+          <li>Google Cloud Speech API</li>
+          <li>OpenCV</li>
+        </ul>
+        <p>
+          Won this Hackathon with the project "SereneHub"
+          - Build a project for mental health that consisted of Ml model for detecting emotions and reading facial expressions
+            and suggesting a youtube video or song to lighten up the mood.
+          - I worked on training the ML for facial detection and speech to text deciphering.
+          
+        </p>
+        <p><a href="https://github.com/kirinain/Facial_Emotion_Recognition">Github</a></p>
+        <br />
+        <div class="image">
+          <img
+            src="/assets/project_7-IPpeVstu.jpeg"
+            width="100%"
+            alt="Page Buddy screenshot"
+            loading="lazy"
+            style="aspect-ratio: 1800 / 1576"
+          />
+        </div>
+        <hr />
+        
+        </section>
+      <section>
+        <h1 id="contact">Contact</h1>
+        <p style="text-align: center">
+          Reach out on
+          <a href="https://www.linkedin.com/in/kiritinain/"
+            ><u><b>LinkedIn</b></u></a
+          >
+
+          <a href="https://x.com/NainKiriti"
+            ><u><b>X</b></u></a
+          >
+
+          <a href="https://github.com/kirinain"
+            ><u><b>Github</b></u></a
+          >
+        </p>
+      </section>
+    </main>
+
+    <input type="text" id="textarea" readonly />
+    <div id="loading">
+      <h2>Booting...</h2>
+      <div id="loading-bar">
+        <div id="loading-bar-progress"></div>
+      </div>
+      <div id="loading-items">Starting...</div>
+    </div>
+    
+    <script>
+      function closeMenu() {
+        document.getElementsByTagName("nav")[0].classList.remove(["active"]);
+      }
+
+      function toggleMenu() {
+        const nav = document.getElementsByTagName("nav")[0];
+        if (nav.classList.contains("active")) {
+          nav.classList.remove(["active"]);
+        } else {
+          nav.classList.add("active");
+        }
+      }
+    </script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-EDNKHGV4HB"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-EDNKHGV4HB");
+    </script>
+  </body>
+</html>
